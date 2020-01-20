@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>src.spreadsheet package &mdash; Spreadsheet 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="src.utils package" href="src.utils.html" />
+    <link rel="prev" title="src.exceptions package" href="src.exceptions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Spreadsheet
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="src.html">src package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="src.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="src.cells.html">src.cells package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="src.exceptions.html">src.exceptions package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">src.spreadsheet package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-src.spreadsheet.spreadsheet">src.spreadsheet.spreadsheet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-src.spreadsheet">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="src.utils.html">src.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#module-src.menu">src.menu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spreadsheet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="src.html">src package</a> &raquo;</li>
+        
+      <li>src.spreadsheet package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/src.spreadsheet.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="src-spreadsheet-package">
+<h1>src.spreadsheet package<a class="headerlink" href="#src-spreadsheet-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-src.spreadsheet.spreadsheet">
+<span id="src-spreadsheet-spreadsheet-module"></span><h2>src.spreadsheet.spreadsheet module<a class="headerlink" href="#module-src.spreadsheet.spreadsheet" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet">
+<em class="property">class </em><code class="sig-prename descclassname">src.spreadsheet.spreadsheet.</code><code class="sig-name descname">SpreadSheet</code><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is the main class that will contain all the Cells and Expressions making a SpreadSheet.
+All the functions contained in the menu, should be executed here.</p>
+<p>Holds a maximum of 702 columns (from A to ZZ) even though it can be easily expanded</p>
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.attach_to_cells">
+<code class="sig-name descname">attach_to_cells</code><span class="sig-paren">(</span><em class="sig-param">cell</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.attach_to_cells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attach a cell to cells
+:param cell: cell to be detached
+:type cell: Cell</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.copy_cell">
+<code class="sig-name descname">copy_cell</code><span class="sig-paren">(</span><em class="sig-param">alias_origin</em>, <em class="sig-param">range</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.copy_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the the type of the cell and adapts to the destination cell
+:param alias_origin: Alias of the cell to be copied
+:type alias_origin: str
+:param range: Alias of cell or cells to be set
+:type range: str</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.detach_from_cells">
+<code class="sig-name descname">detach_from_cells</code><span class="sig-paren">(</span><em class="sig-param">cell</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.detach_from_cells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detach a cell from cells
+:param cell: cell to be detached
+:type cell: Cell</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.get_cell">
+<code class="sig-name descname">get_cell</code><span class="sig-paren">(</span><em class="sig-param">alias</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.get_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Cell object by its alias</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>alias</strong> (<em>str</em>) – Alias of cell</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The Cell object itself</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="src.cells.html#src.cells.cell.Cell" title="src.cells.cell.Cell">Cell</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">path_='resources/'</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load Spreadsheet class
+:param name: Name of the file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.print">
+<code class="sig-name descname">print</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.print" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.remove_cell">
+<code class="sig-name descname">remove_cell</code><span class="sig-paren">(</span><em class="sig-param">alias</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.remove_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes cell from the list
+:param alias: Cell alias
+:type alias: str</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">path_='resources/'</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save Spreadsheet class</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set values of the cell by cell alias</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>alias</strong> (<em>str</em>) – Alias of cell</p></li>
+<li><p><strong>value</strong> (<em>any</em>) – Value to set</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.update_cell">
+<code class="sig-name descname">update_cell</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.update_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates every a concrete cell
+:returns: Success
+:rtype: boolean</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.spreadsheet.spreadsheet.SpreadSheet.update_expression">
+<code class="sig-name descname">update_expression</code><span class="sig-paren">(</span><em class="sig-param">cell_2_update</em><span class="sig-paren">)</span><a class="headerlink" href="#src.spreadsheet.spreadsheet.SpreadSheet.update_expression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates every a concrete cell
+:returns: Success
+:rtype: boolean</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-src.spreadsheet">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src.spreadsheet" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="src.utils.html" class="btn btn-neutral float-right" title="src.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="src.exceptions.html" class="btn btn-neutral float-left" title="src.exceptions package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Jordi Morera, Janna Escur, Eric Presas
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
